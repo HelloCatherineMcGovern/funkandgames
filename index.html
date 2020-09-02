@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Noto+Serif+SC:wght@200&family=Shrikhand&display=swap" rel="stylesheet"> 
+	
+	<script>
+		
+		function myAdditionFunction() {
+		 var x = document.getElementById("firstNumber").value;
+		 var y = document.getElementById("secondNumber").value;
+		document.getElementById("addAnswer").innerHTML = Number(x)+Number(y);	
+		}
+
+		function mySubtractionFunction() {
+		 var x = document.getElementById("firstNumber").value;
+		 var y = document.getElementById("secondNumber").value;
+		document.getElementById("subtractAnswer").innerHTML = Number(x)-Number(y);	
+		}
+		
+		
+	</script>
+	
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+
+	<h2>Math-a-polooza</h2>
+
+	<!--I'm using text on the input type so that the boxes look a little bit cleaner-->
+
+		<input type="text" id="firstNumber"><br>
+		<input type="text" id="secondNumber"><br>
+
+	<button type="button" onclick="myAdditionFunction()">Add these numbers together</button>
+	<p id="addAnswer"></p>
+	<button type="button" onclick="mySubtractionFunction()">Subtract the second number from the first number</button>
+	<p id="subtractAnswer"></p>
+
+	
+	
+</body>
+</html> 

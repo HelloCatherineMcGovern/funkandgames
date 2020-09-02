@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h2
+{
+	/*font-family: 'Kumar One', cursive;*/
+	font-family: 'Shrikhand', cursive;
+	font-size: 2em;
+}
+
+
+p
+{
+	font-family: 'Noto Serif SC', serif;
+	font-size: 1em;
+	
+}
+
+button
+{
+	font-family: 'Noto Serif SC', serif;
+	font-size: 1em;
+	
+}
+
+input
+{
+	font-family: 'Noto Serif SC', serif;
+	font-size: 1em;
+	
+}
