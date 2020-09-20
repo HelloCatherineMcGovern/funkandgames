@@ -1,10 +1,20 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@media (min-width: 0px) {
+
+
 h2
 {
 	/*font-family: 'Kumar One', cursive;*/
 	font-family: 'Shrikhand', cursive;
+	font-size: 2em;
+}
+
+h1
+{
+	/*font-family: 'Kumar One', cursive;*/
+	font-family: 'Kumar One', cursive;
 	font-size: 2em;
 }
 
@@ -16,16 +26,119 @@ p
 	
 }
 
+p.button
+{
+	font-family: 'Noto Serif SC', serif;
+	font-size: .75em;
+	
+}
+
 button
 {
 	font-family: 'Noto Serif SC', serif;
 	font-size: 1em;
+	width: 100%;
+	border-radius: 1em;
 	
+}
+
+button.clear {
+  border: thin #000000 dotted;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: .8em;
+  cursor: pointer;
+  display: inline-block;
 }
 
 input
 {
 	font-family: 'Noto Serif SC', serif;
 	font-size: 1em;
+	width: 90%;
 	
 }
+
+div.header
+{
+	width: 80;
+	border-radius: 2em;
+	border-color: magenta;
+	border-width: 2px;
+	margin: 5%;
+	padding: 1em;
+	background: yellow;
+}
+
+div.unit
+{
+	width: 90%;
+	border-radius: 2em;
+	border-color: magenta;
+	border-width: 2px;
+	margin: 5%;
+	padding: 1em;
+	background: yellow;
+}
+
+#container
+{
+	width: 70%;
+	margin: auto;
+}
+
+div.row
+{
+	width: 90%;
+	flex-direction: column;
+	display: flex table-column;
+	/* justify-content: center;*/
+	  justify-content: space-around;
+	margin: auto;
+		
+		
+}
+
+.answer
+{
+	background-color: white;
+	width: 90%;
+	font-size: 1 em;
+}
+
+.customize_menu
+{
+	width: 100%;
+	border-radius: 1em;
+	border-color: magenta;
+	border-width: 1px;
+	border-style: dotted;
+	margin: 5%;
+	padding:  .5em;
+	
+	}
+	
+	}
+
+
+@media (min-width: 800px) {
+  
+ 
+
+div.row
+{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center;*/
+	  justify-content: space-around;
+	margin: auto;
+		
+}
+div.unit
+{
+	width: 30%;
+
+
+	
+	 }

@@ -4,45 +4,78 @@
 	
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Noto+Serif+SC:wght@200&family=Shrikhand&display=swap" rel="stylesheet"> 
-	
-	<script>
-		
-		function myAdditionFunction() {
-		 var x = document.getElementById("firstNumber").value;
-		 var y = document.getElementById("secondNumber").value;
-		document.getElementById("addAnswer").innerHTML = Number(x)+Number(y);	
-		}
-
-		function mySubtractionFunction() {
-		 var x = document.getElementById("firstNumber").value;
-		 var y = document.getElementById("secondNumber").value;
-		document.getElementById("subtractAnswer").innerHTML = Number(x)-Number(y);	
-		}
-		
-		
-	</script>
+	 <script src="scripts.js"></script> 
 	
 	<meta charset="UTF-8">
-	<title>Untitled Document</title>
+	<title>Funk and Games</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 
 <body>
 
-
-
+	<div id="header">
 	<h2>Math-a-polooza</h2>
-
-	<!--I'm using text on the input type so that the boxes look a little bit cleaner-->
-
-		<input type="text" id="firstNumber"><br>
-		<input type="text" id="secondNumber"><br>
-
-	<button type="button" onclick="myAdditionFunction()">Add these numbers together</button>
-	<p id="addAnswer"></p>
-	<button type="button" onclick="mySubtractionFunction()">Subtract the second number from the first number</button>
-	<p id="subtractAnswer"></p>
-
+	</div>
 	
+<div id ="container">
+	
+	<div class="row">
+		<div class="customize_menu">
+			<h3>Customize Appearance</h3>
+
+
+		<button class="clear" onclick="colorchange()">Click Me!</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="unit">
+			<h1>Addition / Subtraction</h1>
+
+			<!--I'm using text on the input type so that the boxes look a little bit cleaner-->
+
+				<input type="text" id="firstNumber" value="type a number"><br>
+				<input type="text" id="secondNumber" value="type a number"><br><br>
+
+			<button class="clear" onclick="myAdditionFunction()">Add these numbers together</button>
+			<p>Here's the answer:
+			</p>
+			<p id="addAnswer"></p>
+			<button class="clear" onclick="mySubtractionFunction()">Subtract the second number from the first number</button>
+			<p>Here's the answer:
+			</p>
+			<p id="subtractAnswer" ></p>
+		</div>
+	
+		<div class="unit">
+			<h1>Celsius to Fareheit Conversion</h1>
+
+
+				<p>Enter a temperature in Celsuis</p>
+				<input type="text" id="celsiusNumber"><br><br>
+
+
+			<button type="button" class="clear" onclick="myCelsius_toFarenheitFunction()">Convert Celsius to Farenheit</button>
+			<p id="celsiusAnswer"></p>
+
+		</div>
+		<div class="unit">
+			<h1>Celsius to Fareheit Conversion</h1>
+
+
+				<p>Enter a temperature in Celsuis</p>
+				<input type="text" id="celsiusNumber"><br><br>
+
+
+			<button type="button" class="clear" onclick="myCelsius_toFarenheitFunction()">Convert Celsius to Farenheit</button>
+			<p id="celsiusAnswer"></p>
+
+		</div>
+
+		
+
+
+		</div>
+			</div>
 	
 </body>
 </html> 
