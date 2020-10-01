@@ -1,2 +1,2 @@
 # funkandgames
-A personal project for fun exploring javascript capabilities
+A personal project for fun and exploring javascript capabilities
