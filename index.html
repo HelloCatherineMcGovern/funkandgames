@@ -5,6 +5,17 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Noto+Serif+SC:wght@200&family=Shrikhand&display=swap" rel="stylesheet"> 
 	 <script src="scripts.js"></script> 
+	 <!--<script src="appearance_scripts.js"></script> -->
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
+  </script>
+	
 	
 	<meta charset="UTF-8">
 	<title>Funk and Games</title>
@@ -12,19 +23,63 @@
 </head>
 
 <body>
-
-	<div id="header">
+		
+		<!--HERE IS THE START OF THE SLIDESHOW-->
+	 <!-- Slideshow container -->
+	<div class="slideshow-container">
+		<div id="header">
 	<h2>Math-a-polooza</h2>
 	</div>
+
+
+		  <!-- Full-width images with number and caption text -->
+		<!--   <div class="mySlides" style="background: magenta">
+			<div class="numbertext">1 / 3</div>
+			<img src="img1.jpg" style="width:100%">
+			<div class="text">Caption Text</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="img2.jpg" style="width:100%">
+			<div class="text">Caption Two</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="img3.jpg" style="width:100%">
+			<div class="text">Caption Three</div>
+		  </div>
+
+		  <!-- Next and previous buttons 
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>-->
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		</div>
 	
-<div id ="container">
+	</div> 
+
+	
+	
+	<!--HERE ENDS THE SLIDESHOW-->
+	
+	
 	
 	<div class="row">
 		<div class="customize_menu">
-			<h3>Customize Appearance</h3>
+			<h3 class="font_kumar">Customize Appearance
 
 
-		<button class="clear" onclick="colorchange()">Click Me!</button>
+		<button class="cust" onclick="magentaChange()">Magenta Style</button>
+		<button class="cust" onclick="cyanChange()">Cyan Style</button>
+				<button class="cust" onclick="yellowChange()">Back to Yellow style</button></h3>
 		</div>
 	</div>
 	<div class="row">
@@ -33,8 +88,8 @@
 
 			<!--I'm using text on the input type so that the boxes look a little bit cleaner-->
 
-				<input type="text" id="firstNumber" value="type a number"><br>
-				<input type="text" id="secondNumber" value="type a number"><br><br>
+				<input type="text" id="firstNumber"><br>
+				<input type="text" id="secondNumber"><br><br>
 
 			<button class="clear" onclick="myAdditionFunction()">Add these numbers together</button>
 			<p>Here's the answer:
@@ -58,24 +113,34 @@
 			<p id="celsiusAnswer"></p>
 
 		</div>
-		<div class="unit">
-			<h1>Celsius to Fareheit Conversion</h1>
+		 <div class="unit">
 
+                                                <h1>Feet to Miles</h1>
 
-				<p>Enter a temperature in Celsuis</p>
-				<input type="text" id="celsiusNumber"><br><br>
+ 
 
+ 
 
-			<button type="button" class="clear" onclick="myCelsius_toFarenheitFunction()">Convert Celsius to Farenheit</button>
-			<p id="celsiusAnswer"></p>
+                                                                <p>Enter distance in feet</p>
 
-		</div>
+                                                                <input type="text" id="feetNumber"><br><br>
+
+ 
+
+ 
+
+                                                <button type="button" class="clear" onclick="feetToMiles()">Convert Feet to Miles</button>
+
+                                                <p id="milesAnswer"></p>
+
+ 
+
+                                </div>
 
 		
 
 
 		</div>
-			</div>
 	
 </body>
 </html> 
